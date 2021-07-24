@@ -1,0 +1,711 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Fri Jul 23 19:26:17 2021
+# Process ID: 7180
+# Log file: C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/vivado.log
+# Journal file: C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.xpr
+INFO: [Project 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit'
+INFO: [Project 1-313] Project file moved from 'D:/Projects/16-Bit-Processor/RISC_16_Bit' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilnx/Vivado/2014.4/data/ip'.
+file mkdir C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new
+close [ open C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v w ]
+add_files C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close [ open C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_decoder.v w ]
+add_files C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_decoder.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/ctrl_unit.v w ]
+add_files C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/ctrl_unit.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v w ]
+add_files -fileset sim_1 C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'reg_file_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj reg_file_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot reg_file_test_behav xil_defaultlib.reg_file_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.reg_file_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot reg_file_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 76452061 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsi..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 12:38:27 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 819.723 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "reg_file_test_behav -key {Behavioral:sim_1:Functional:reg_file_test} -tclbatch {reg_file_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source reg_file_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 819.723 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'reg_file_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 819.906 ; gain = 0.184
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'reg_file_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj reg_file_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot reg_file_test_behav xil_defaultlib.reg_file_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.reg_file_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot reg_file_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3250367837 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsi..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 12:39:04 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "reg_file_test_behav -key {Behavioral:sim_1:Functional:reg_file_test} -tclbatch {reg_file_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source reg_file_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" Line 37
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'reg_file_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 846.438 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'reg_file_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj reg_file_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot reg_file_test_behav xil_defaultlib.reg_file_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.reg_file_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot reg_file_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2786751711 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsi..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 12:42:54 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "reg_file_test_behav -key {Behavioral:sim_1:Functional:reg_file_test} -tclbatch {reg_file_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source reg_file_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" Line 37
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'reg_file_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 846.438 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'reg_file_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj reg_file_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file_test
+ERROR: [VRFC 10-1412] syntax error near # [C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v:32]
+ERROR: [VRFC 10-1040] module reg_file_test ignored due to previous errors [C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v:23]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'reg_file_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj reg_file_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot reg_file_test_behav xil_defaultlib.reg_file_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.reg_file_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot reg_file_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1803098069 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsi..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 12:44:35 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "reg_file_test_behav -key {Behavioral:sim_1:Functional:reg_file_test} -tclbatch {reg_file_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source reg_file_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" Line 37
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'reg_file_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 846.438 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'reg_file_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj reg_file_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot reg_file_test_behav xil_defaultlib.reg_file_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.reg_file_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot reg_file_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3185956824 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/reg_file_test_behav/webtalk/xsi..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 12:57:08 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "reg_file_test_behav -key {Behavioral:sim_1:Functional:reg_file_test} -tclbatch {reg_file_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source reg_file_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/reg_file_test.v" Line 37
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'reg_file_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 846.438 ; gain = 0.000
+set_property top inst_decoder [current_fileset]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/inst_decoder_test.v w ]
+add_files -fileset sim_1 C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/inst_decoder_test.v
+update_compile_order -fileset sim_1
+set_property top inst_decoder_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/reg_file_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'inst_decoder_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj inst_decoder_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/inst_decoder_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot inst_decoder_test_behav xil_defaultlib.inst_decoder_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.inst_decoder_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot inst_decoder_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/inst_decoder_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1340725190 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/inst_decoder_test_behav/webtalk..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 13:14:24 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "inst_decoder_test_behav -key {Behavioral:sim_1:Functional:inst_decoder_test} -tclbatch {inst_decoder_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source inst_decoder_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/inst_decoder_test.v" Line 39
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'inst_decoder_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 855.633 ; gain = 8.605
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/reg_file_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'inst_decoder_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj inst_decoder_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/inst_decoder_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_decoder_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot inst_decoder_test_behav xil_defaultlib.inst_decoder_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.inst_decoder_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot inst_decoder_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/inst_decoder_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3407692231 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/inst_decoder_test_behav/webtalk..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 13:17:57 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "inst_decoder_test_behav -key {Behavioral:sim_1:Functional:inst_decoder_test} -tclbatch {inst_decoder_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source inst_decoder_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/inst_decoder_test.v" Line 39
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'inst_decoder_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 868.035 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v w ]
+add_files -fileset sim_1 C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v
+update_compile_order -fileset sim_1
+set_property top ctrl_unit [current_fileset]
+update_compile_order -fileset sources_1
+set_property top ctrl_unit_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/inst_decoder_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/reg_file_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ctrl_unit_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj ctrl_unit_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/ctrl_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_unit_test
+ERROR: [VRFC 10-91] clk is not declared [C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v:27]
+ERROR: [VRFC 10-1040] module ctrl_unit_test ignored due to previous errors [C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v:23]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '' file for more information.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/inst_decoder_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/reg_file_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ctrl_unit_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj ctrl_unit_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/ctrl_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_unit_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ctrl_unit_test_behav xil_defaultlib.ctrl_unit_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctrl_unit
+Compiling module xil_defaultlib.ctrl_unit_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ctrl_unit_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/ctrl_unit_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 4114956178 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/ctrl_unit_test_behav/webtalk/xs..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 13:30:21 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ctrl_unit_test_behav -key {Behavioral:sim_1:Functional:ctrl_unit_test} -tclbatch {ctrl_unit_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source ctrl_unit_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ctrl_unit_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 909.805 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/inst_decoder_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/reg_file_test_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ctrl_unit_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+"xvlog -m64 -prj ctrl_unit_test_vlog.prj"
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/ctrl_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_unit_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilnx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ctrl_unit_test_behav xil_defaultlib.ctrl_unit_test xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ctrl_unit
+Compiling module xil_defaultlib.ctrl_unit_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ctrl_unit_test_behav
+
+****** Webtalk v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/ctrl_unit_test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3378843628 -regid "212245528_0_0_666" -xml C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bi..."
+    (file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/xsim.dir/ctrl_unit_test_behav/webtalk/xs..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 24 13:31:03 2021...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ctrl_unit_test_behav -key {Behavioral:sim_1:Functional:ctrl_unit_test} -tclbatch {ctrl_unit_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2014.4
+Time resolution is 1 ps
+source ctrl_unit_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 110 ns : File "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/ctrl_unit_test.v" Line 32
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ctrl_unit_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 909.805 ; gain = 0.000
+close [ open C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/memory_block.v w ]
+add_files C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/memory_block.v
+update_compile_order -fileset sources_1
+remove_files C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/memory_block.v
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 24 13:34:31 2021...
