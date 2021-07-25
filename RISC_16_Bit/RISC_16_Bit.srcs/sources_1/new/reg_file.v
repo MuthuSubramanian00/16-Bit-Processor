@@ -40,8 +40,8 @@ module reg_file(
     
     // Initialize outputs and registers
         initial begin
-            O_dataA = 1'd0;
-            O_dataB = 1'd0;
+            O_dataA = 16'b0;
+            O_dataB = 16'b0;
             for(count = 0; count < 8; count = count + 1) begin
                         regs[count] = 0;
                     end
