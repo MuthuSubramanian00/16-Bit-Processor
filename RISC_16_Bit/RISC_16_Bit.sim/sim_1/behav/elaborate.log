@@ -1,13 +1,25 @@
 Vivado Simulator 2014.4
 Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alu_test_behav xil_defaultlib.alu_test xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto e792489ab8e649569c1f1c55032e266a --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_test_behav xil_defaultlib.main_test xil_defaultlib.glbl -log elaborate.log 
 Multi-threading is on. Using 10 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port I_load_val [D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/main_test.v:65]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 4 for port aluop [D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/main_test.v:77]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 4 for port I_aluip [D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/main_test.v:96]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 4 for port aluop [D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/main_test.v:107]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port O_pc_in [D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/main_test.v:111]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.program_mem
+Compiling module xil_defaultlib.inst_fetch
+Compiling module xil_defaultlib.inst_decoder
+Compiling module xil_defaultlib.reg_file
 Compiling module xil_defaultlib.alu
-Compiling module xil_defaultlib.alu_test
+Compiling module xil_defaultlib.branch_control
+Compiling module xil_defaultlib.ctrl_unit
+Compiling module xil_defaultlib.main_test
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot alu_test_behav
+Built simulation snapshot main_test_behav

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 24.07.2021 18:09:00
+// Create Date: 25.07.2021 19:00:40
 // Design Name: 
-// Module Name: inst_fetch
+// Module Name: mcu_top
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,18 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module inst_fetch(
-    input I_clk,
-    input [15:0] I_pc,
-    output[15:0] O_inst
+module mcu_top(
+    input I_clk
+    
     );
     
-    //reg O_inst;
     
-    program_mem inst_mem(
-         .I_clk(I_clk),
-         .I_addr(I_pc),
-         .O_code(O_inst)
-         );
-    
+
 endmodule

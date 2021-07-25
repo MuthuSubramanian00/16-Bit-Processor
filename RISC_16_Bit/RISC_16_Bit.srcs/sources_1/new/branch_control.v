@@ -21,17 +21,30 @@
 
 
 module branch_control(
-    input clk,input en,input aluop[3:0],input alu_dataO[15:0],
-    output pc_in[15:0]
+    input clk,
+    input en,
+    input [3:0]aluop,
+    input [15:0] I_dataA,
+    input [15:0] I_dataB,
+    input [7:0] imm_D,
+    output reg [7:0]O_pc_in,
+    output reg O_load_en
     );
     
+    parameter jif_equal_i = 4'b1010, jif_greater_i = 4'b1011, jif_lesser_i = 4'b1100;
+    reg O_resJ;
     always @(posedge clk)
     begin
-    if(en)
-    if(aluop==4'b1010 || aluop==4'b1011 || aluop==4'b1100)
-    pc_in<=alu_dataO;
-    else
-    pc_in<=16'bZZZZ_ZZZZ_ZZZZ_ZZZZ;
+        if(en) 
+        begin
+        case(aluop)
+            jif_equal_i:   O_load_en <= I_dataA==I_dataB ? 1:0 ;      
+            jif_greater_i: O_load_en <= I_dataA>I_dataB ? 1:0;
+            jif_lesser_i:  O_load_en <= I_dataA<I_dataB ? 1:0;
+            endcase
+        O_pc_in <= imm_D; 
+        end    
     end
+    
     
 endmodule

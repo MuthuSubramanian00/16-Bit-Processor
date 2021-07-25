@@ -28,7 +28,8 @@ module ctrl_unit(
     output O_enrgrd,
     output O_enalu,
     output O_enrgwr,
-    output O_enmem
+    output O_enmem,
+    output O_enbcu
     );
     
     reg [5:0] state;
@@ -37,6 +38,7 @@ module ctrl_unit(
     assign O_endec = state[1];
     assign O_enrgrd = state[2] | state[4];
     assign O_enalu = state[3];
+    assign O_enbcu = state[3];  
     assign O_enrgwr = state[4];
     assign O_enmem = state[5];
     

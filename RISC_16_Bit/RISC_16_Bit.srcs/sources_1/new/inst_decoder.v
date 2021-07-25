@@ -25,7 +25,7 @@ module inst_decoder(
     input clk,
     input en,
     output reg [3:0] aluop,
-    output reg [15:0] imm_dataD,
+    output reg [7:0] imm_dataD,
     output reg [2:0] sel_Ra,
     output reg [2:0] sel_Rb,
     output reg [2:0] sel_Rd,
@@ -47,8 +47,17 @@ module inst_decoder(
                     // Assign the bits statically according to ISA
                     aluop <= I_inst[15:12];
                     sel_Rd <= I_inst[10:8];
-                    sel_Ra <= I_inst[7:5];
-                    sel_Rb <= I_inst[4:2];
+                    if((I_inst[15:12] == 4'b1010)||(I_inst[15:12] == 4'b1011)||(I_inst[15:12] == 4'b1100))
+                        begin
+                        sel_Ra <= I_inst[10:8];
+                        sel_Rb <= 3'b000;
+                        end
+                    else
+                        begin
+                        sel_Ra <= I_inst[7:5];  
+                        sel_Rb <= I_inst[4:2];
+                        end          
+                    
                     imm_dataD <= I_inst[7:0];
                     
                     case(I_inst[15:12])

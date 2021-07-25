@@ -24,7 +24,7 @@ module reg_file(
     input [2:0] sel_Ra,
     input [2:0] sel_Rb,
     input [2:0] sel_Rd,
-    input [15:0] imm_dataD,
+    input [15:0] res_data_D,
     input clk,
     input en,
     input we,
@@ -43,7 +43,7 @@ module reg_file(
             O_dataA = 16'b0;
             O_dataB = 16'b0;
             for(count = 0; count < 8; count = count + 1) begin
-                        regs[count] = 0;
+                        regs[count] = 16'b0000_0000_0000_0001;
                     end
         end
         
@@ -52,7 +52,7 @@ module reg_file(
                 if(en) begin
                     // Check for write enable flag and then assign to register
                     if(we)
-                        regs[sel_Rd] = imm_dataD;
+                        regs[sel_Rd] = res_data_D;
                         
                     // Assign correct output value to A and B
                     O_dataA <= regs[sel_Ra];

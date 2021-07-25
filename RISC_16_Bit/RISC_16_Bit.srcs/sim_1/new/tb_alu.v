@@ -21,7 +21,7 @@
 
 
 module alu_test;
-    reg [3:0] aluip;
+    reg [3:0] aluip; //opcode
     reg clk;
     reg en;
     reg [15:0] I_ins;

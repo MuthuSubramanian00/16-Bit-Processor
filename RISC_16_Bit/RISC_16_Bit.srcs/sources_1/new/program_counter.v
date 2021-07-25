@@ -25,13 +25,13 @@ module program_counter(
     input I_reset,
     input I_count_en,
     input I_load_en,
-    input [15:0] I_load_val,
+    input [7:0] I_load_val,
     output reg [15:0] O_pc
     );
     
     reg [15:0] counter = 0;
     
-    always@ (posedge I_clk or negedge I_reset)
+    always@ (posedge I_clk or posedge I_reset)
     begin
         if(!I_reset)
         begin
@@ -40,12 +40,15 @@ module program_counter(
         else
         begin
             if(I_load_en)
-                counter <= I_load_val;
-            else if(i_count_en)
-                counter <= counter + 4;
+                counter <= counter + I_load_val;
+            else if(I_count_en)
+                counter <= counter + 1;
         end
+       O_pc <= counter;
+        
     end
     
-    assign O_pc = counter;
+    
+    
     
 endmodule
