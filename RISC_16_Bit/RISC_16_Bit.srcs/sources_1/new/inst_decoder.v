@@ -29,7 +29,8 @@ module inst_decoder(
     output reg [2:0] sel_Ra,
     output reg [2:0] sel_Rb,
     output reg [2:0] sel_Rd,
-    output reg regwe
+//    output reg regwe,
+    output reg end_valid
     );
     
     initial begin
@@ -39,10 +40,10 @@ module inst_decoder(
             sel_Ra = 0;
             sel_Rb = 0;
             sel_Rd = 0;
-            regwe = 0;
+            //regwe = 0;
         end
         
-    always @(posedge clk) begin
+    always @(*) begin
                 if(en) begin
                     // Assign the bits statically according to ISA
                     aluop <= I_inst[15:12];
@@ -60,13 +61,13 @@ module inst_decoder(
                     
                     imm_dataD <= I_inst[7:0];
                     
-                    case(I_inst[15:12])
-                    //disabling we for reg file, for all unused opcodes
-                        4'b1101 : regwe <= 0;
-                        4'b1110 : regwe <= 0;
-                        4'b1111 : regwe <= 0;                        
-                    default : regwe <= 1;
-                    endcase
+//                    case(I_inst[15:12])
+//                    //disabling we for reg file, for all unused opcodes
+//                        4'b1101 : regwe <= 0;
+//                        4'b1110 : regwe <= 0;
+//                        4'b1111 : regwe <= 0;                        
+//                    default : regwe <= 1;
+//                    endcase
                     
                 end
             end

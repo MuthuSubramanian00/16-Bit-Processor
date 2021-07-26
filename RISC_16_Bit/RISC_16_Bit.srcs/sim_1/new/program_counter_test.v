@@ -45,13 +45,13 @@ module program_counter_test;
         
         initial begin
             I_clk = 1'b1;
-            I_reset = 1'b0;
+            I_reset = 1'b1;
             I_count_en = 1'b0;
             I_load_en = 1'b0;
             I_load_val = 16'b0;
             
             #10
-                I_reset = 1'b1;        
+                I_reset = 1'b0;        
                 I_count_en = 1'b1;
             #50
                 I_load_en = 1'b1;

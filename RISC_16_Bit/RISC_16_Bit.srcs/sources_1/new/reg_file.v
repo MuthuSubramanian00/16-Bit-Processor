@@ -43,20 +43,19 @@ module reg_file(
             O_dataA = 16'b0;
             O_dataB = 16'b0;
             for(count = 0; count < 8; count = count + 1) begin
-                        regs[count] = 16'b0000_0000_0000_0001;
+                        regs[count] = count;
                     end
         end
         
      // On clock positive edge
             always @(posedge clk) begin
                 if(en) begin
-                    // Check for write enable flag and then assign to register
-                    if(we)
-                        regs[sel_Rd] = res_data_D;
-                        
                     // Assign correct output value to A and B
                     O_dataA <= regs[sel_Ra];
                     O_dataB <= regs[sel_Rb];
                 end
+                // Check for write enable flag and then assign to register
+                if(we)
+                    regs[sel_Rd] = res_data_D;
             end
 endmodule

@@ -23,42 +23,39 @@
 module ctrl_unit(
     input I_clk,
     input I_reset,
-    output O_enfetch,
-    output O_endec,
+//    output O_enfetch,
+//    output O_endec,
     output O_enrgrd,
     output O_enalu,
     output O_enrgwr,
-    output O_enmem,
-    output O_enbcu
+    output O_enbcu,
+    output reg  [2:0] state
+    
     );
+
     
-    reg [5:0] state;
-    
-    assign O_enfetch = state[0];
-    assign O_endec = state[1];
-    assign O_enrgrd = state[2] | state[4];
-    assign O_enalu = state[3];
-    assign O_enbcu = state[3];  
-    assign O_enrgwr = state[4];
-    assign O_enmem = state[5];
+//    assign O_enfetch = state[0];
+//    assign O_endec = state[0];
+    assign O_enrgrd = state[0];
+    assign O_enalu = state[0];
+    assign O_enbcu = state[0];  
+    assign O_enrgwr = state[1];
     
     initial begin
-        state = 6'b000001;
+        state = 3'b000;
     end
     
     always @(posedge I_clk) begin
-        if(I_reset) begin
-            state <= 6'b000001;
-        end
-        else begin
+        /*if(I_reset) begin
+            state <= 3'b000;
+        end*/
+        //else begin
             case(state)
-                6'b000001 : state <= 6'b000010;
-                6'b000010 : state <= 6'b000100;
-                6'b000100 : state <= 6'b001000;
-                6'b001000 : state <= 6'b010000;
-                6'b010000 : state <= 6'b100000;
-                default : state <= 6'b000001;
+                3'b000 : state <= 3'b001;
+                3'b001 : state <= 3'b010;
+                3'b010 : state <= 3'b000;
+                default : state <= 3'b000;
             endcase
-        end
+        //end
     end
 endmodule
