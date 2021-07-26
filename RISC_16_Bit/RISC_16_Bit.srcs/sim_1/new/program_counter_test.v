@@ -24,10 +24,10 @@ module program_counter_test;
     
         reg I_clk;
         reg I_reset;
-        reg i_count_en;
-        reg i_load_en;
-        reg [31:0] I_load_val;
-        wire [31:0] O_pc;
+        reg I_count_en;
+        reg I_load_en;
+        reg [7:0] I_load_val;
+        wire [15:0] O_pc;
         
         program_counter uut (
             .I_clk(I_clk),
@@ -53,7 +53,7 @@ module program_counter_test;
             #10
                 I_reset = 1'b1;        
                 I_count_en = 1'b1;
-            #52
+            #50
                 I_load_en = 1'b1;
                 I_load_val = 200;
             #10

@@ -34,7 +34,7 @@ module main_test;
     wire [15:0] dataD;
     wire [15:0] dataB;
     wire [15:0] dataA;
-    wire [4:0] aluop;
+    wire [3:0] aluop;
     wire [7:0] imm;
     wire Dwe;
     // wire shld_branch;

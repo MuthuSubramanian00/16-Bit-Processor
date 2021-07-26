@@ -29,8 +29,8 @@ module program_mem(
     reg [15:0] mem[15:0]; // Defining 64 bytes of memory
     
     initial begin
-              mem[0] = 16'b0001_0_000_000_001_00;//Ac=Ac-R1
-//            mem[1] = 16'b0000_0_000_000_001_00;//Ac=Ac+R1
+              mem[0] = 16'b0000_0_000_000_001_00;//Ac=Ac+R1
+//            mem[1] = 16'b0001_0_000_000_001_00;//Ac=Ac-R1
 //            mem[2] = 16'b0010_0_000_000_001_00;//Ac=Ac|R1
 //            mem[3] = 16'b0011_0_000_000_001_00;//Ac=Ac&R1
 //            mem[4] = 16'b0100_0_000_000_001_00;//Ac=Ac^R1
@@ -46,7 +46,7 @@ module program_mem(
 //            mem[14] = 0;
 //            mem[15] = 0;
             
-//            O_code = 16'b0000000000000000;  
+            O_code = 16'b0000000000000000;  
         end
         
          always @(posedge I_clk) begin

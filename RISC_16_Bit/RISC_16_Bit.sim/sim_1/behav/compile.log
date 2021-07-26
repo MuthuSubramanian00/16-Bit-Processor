@@ -1,21 +1,21 @@
 Determining compilation order of HDL files.
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/program_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/program_mem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module program_mem
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/reg_file.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module reg_file
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module program_counter
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_fetch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module inst_fetch
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/inst_decoder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module inst_decoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/branch_control.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/branch_control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module branch_control
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/alu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module alu
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/ctrl_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sources_1/new/ctrl_unit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ctrl_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/main_test.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.srcs/sim_1/new/main_test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module main_test
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Projects/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/OneDrive/Documents/Verilog/Lab_verilog/16-Bit-Processor/RISC_16_Bit/RISC_16_Bit.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

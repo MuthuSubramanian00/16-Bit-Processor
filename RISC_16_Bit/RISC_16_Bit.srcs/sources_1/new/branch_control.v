@@ -33,6 +33,12 @@ module branch_control(
     
     parameter jif_equal_i = 4'b1010, jif_greater_i = 4'b1011, jif_lesser_i = 4'b1100;
     reg O_resJ;
+    
+    initial
+    begin
+    O_load_en=0;O_pc_in=0;
+    end
+    
     always @(posedge clk)
     begin
         if(en) 
@@ -45,6 +51,5 @@ module branch_control(
         O_pc_in <= imm_D; 
         end    
     end
-    
-    
+       
 endmodule
